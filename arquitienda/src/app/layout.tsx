@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header>
+      <header>     
           <nav>
             <ul>
               <Link href="/">
@@ -27,10 +27,10 @@ export default function RootLayout({
               <Link href="/Analisis">
                 <li>Analisis</li>
               </Link>
-              <Link href="/Inventario">
+              <Link href="./Inventario">
                 <li>Inventario</li>
               </Link>
-              <Link href="/Nomina">
+              <Link href="./Nomina">
                 <li>Nomina</li>
               </Link>
             </ul>
