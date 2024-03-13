@@ -18,19 +18,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header>     
+      <header>
           <nav>
             <ul>
               <Link href="/">
                 <li>Home</li>
               </Link>
-              <Link href="/Analisis">
+              <Link href="Analysis">
                 <li>Analisis</li>
               </Link>
-              <Link href="./Inventario">
+              <Link href="inventary">
                 <li>Inventario</li>
               </Link>
-              <Link href="./Nomina">
+              <Link href="Nomina">
                 <li>Nomina</li>
               </Link>
             </ul>
