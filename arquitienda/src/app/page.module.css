@@ -235,8 +235,9 @@
 
 .box {
   flex: 1;
-  border: 1px solid #ccc;
-  margin-right: 220px;
+  border: 1px solid #1a1818;
+  margin-left: 20px;
+  background-color: #1a1818;
   border-radius: 11px; 
   cursor: pointer;
   transition: margin-right 0.3s;
@@ -253,11 +254,50 @@
   padding: 10px;
 }
 
-.boxa {
-  border: 1px solid #ccc;
+.boxa h2 {
+  margin: 0;
   padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 300px;
+  
+}
+
+.boxa p {
+  margin: 0;
+  padding: 10px;
+}
+
+.boxb h2 {
+  margin: 0;
+  padding: 10px;
+  
+}
+
+.boxb p {
+  margin: 0;
+  padding: 10px;
+}
+
+.boxa {
+  flex: 1;
+  border: 1px solid #1a1818;
+  background-color: #1a1818;
+  margin-left: 200px;
+  border-radius: 11px; 
+  cursor: pointer;
+  transition: margin-right 0.3s;
+}
+
+.boxb {
+  flex: 1;
+  border: 1px solid #1a1818;
+  background-color: #1a1818;
+  margin-left: 200px;
+  border-radius: 11px; 
+  cursor: pointer;
+  transition: margin-right 0.3s;
+}
+
+.box-hover {
+  background-color: #56BB91; 
 }
 
 .box h2 {
