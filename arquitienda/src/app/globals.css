@@ -197,7 +197,7 @@ a {
 .box {
   flex: 1;
   border: 1px solid #ccc;
-  margin-right: 220px;
+  margin-right: 100px;
   cursor: pointer;
   transition: margin-right 0.3s;
 }

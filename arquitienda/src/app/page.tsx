@@ -21,7 +21,7 @@ const Boxa = ({ title, content }: BoxProps) => {
 const Boxb = ({ title, content }: BoxProps) => {
 
   return (
-    <div className={styles.boxa}>
+    <div className={styles.boxb}>
       <h2>{title}</h2>
       <p>{content}</p>
     </div>
@@ -47,11 +47,9 @@ const Home = () => {
         <br />
        <br />
       </div>
-      <br />
        <br />
       <div className={styles.container}>
       <br />
-       <br />
       <Boxb title="Analysis" content="Content of Analysis page goes here." /> 
       </div>
 
