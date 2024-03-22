@@ -105,3 +105,35 @@ a {
     color-scheme: dark;
   }
 }
+
+.link-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.link-container li {
+  margin-right: 10px; 
+}
+
+.link-container li:last-child {
+  margin-right: 0; 
+}
+
+
+.link-container a {
+  display: inline-block;
+  padding: 8px 16px; /* Padding inside the link */
+  border: 2px solid white; /* White border */
+  border-radius: 20px; /* Rounded edges */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth color transition for background and text */
+}
+
+.link-container a:hover {
+  background-color: #56BB91; /* Change background color on hover */
+  color: white; 
+}

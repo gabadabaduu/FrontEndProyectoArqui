@@ -18,26 +18,49 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header>
+        <header>
           <nav>
-            <ul>
-              <Link href="/">
-                <li>Home</li>
-              </Link>
-              <Link href="analysis">
-                <li>Analisis</li>
-              </Link>
-              <Link href="inventary">
-                <li>Inventario</li>
-              </Link>
-              <Link href="nomina">
-                <li>Nomina</li>
-              </Link>
+            <ul className="link-container">
+              <li>
+                <Link href="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="analysis">
+                  Analisis
+                </Link>
+              </li>
+              <li>
+                <Link href="inventary">
+                  Inventario
+                </Link>
+              </li>
+              <li>
+                <Link href="nomina">
+                  Nomina
+                </Link>
+              </li>
+              <li>
+                <Link href="paypal">
+                  Facturación
+                </Link>
+              </li>
+              <li>
+                <Link href="user">
+                  Usuario
+                </Link>
+              </li>
+              <li>
+                <Link href="plans">
+                  Tienda de planes
+                </Link>
+              </li>
             </ul>
           </nav>
         </header>
         {children}
-        </body>
+      </body>
     </html>
   );
 }
