@@ -18,6 +18,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <div className="vertical-bar">
+      <li>
+                <Link href="paypal">
+                  Facturación
+                </Link>
+              </li>
+              <li>
+                <Link href="user">
+                  Usuario
+                </Link>
+              </li>
+              <li>
+                <Link href="plans">
+                  Tienda de planes
+                </Link>
+              </li>
+      </div>
         <header>
           <nav>
             <ul className="link-container">
@@ -39,21 +56,6 @@ export default function RootLayout({
               <li>
                 <Link href="nomina">
                   Nomina
-                </Link>
-              </li>
-              <li>
-                <Link href="paypal">
-                  Facturación
-                </Link>
-              </li>
-              <li>
-                <Link href="user">
-                  Usuario
-                </Link>
-              </li>
-              <li>
-                <Link href="plans">
-                  Tienda de planes
                 </Link>
               </li>
             </ul>
