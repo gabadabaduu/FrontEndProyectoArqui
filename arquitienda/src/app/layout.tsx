@@ -18,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="center-right">  
-      <h1>Bienvenida Marcela Valencia</h1> 
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '30vh' }}> 
+      <br/>
+      <h1>Bienvenida </h1> 
+      <h1>Marcela Valencia</h1> 
       </div>
         <div className="vertical-bar">
           <ul className="vertical-link-container">
