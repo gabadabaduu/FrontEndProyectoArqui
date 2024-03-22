@@ -24,13 +24,13 @@ export default function RootLayout({
               <Link href="/">
                 <li>Home</li>
               </Link>
-              <Link href="Analysis">
+              <Link href="analysis">
                 <li>Analisis</li>
               </Link>
               <Link href="inventary">
                 <li>Inventario</li>
               </Link>
-              <Link href="Nomina">
+              <Link href="nomina">
                 <li>Nomina</li>
               </Link>
             </ul>
