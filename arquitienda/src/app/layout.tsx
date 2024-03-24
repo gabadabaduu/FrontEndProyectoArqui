@@ -34,6 +34,17 @@ export default function RootLayout({
             <li>
               <Link href="plans">Tienda de planes</Link>
             </li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <li>
+              <Link href="princial">Log out</Link>
+            </li>
           </ul>
         </div>
         <header>
