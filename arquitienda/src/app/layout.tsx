@@ -20,8 +20,10 @@ export default function RootLayout({
       <body className={inter.className}>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '30vh' }}> 
       <br/>
-      <h1>Bienvenida </h1> 
-      <h1>Marcela Valencia</h1> 
+      <h1>Bienvenida</h1>
+      <div style={{ display: 'flex', color: '#56BB91' }}>
+      <h1>Marcela Valencia</h1>
+      </div>
       </div>
         <div className="vertical-bar">
           <ul className="vertical-link-container">
@@ -34,18 +36,10 @@ export default function RootLayout({
             <li>
               <Link href="plans">Tienda de planes</Link>
             </li>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <li>
+          </ul>
+          <li>
               <Link href="princial">Log out</Link>
             </li>
-          </ul>
         </div>
         <header>
           <nav>

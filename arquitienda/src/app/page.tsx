@@ -50,7 +50,7 @@ const Home = () => {
        <br />
       <div className={styles.container}>
       <br />
-      <Boxb title="Analysis" content="Content of Analysis page goes here." /> 
+      <Boxb title="Analysis" content="Content of Analysis page goes here." />
       </div>
 
     </main>
