@@ -52,7 +52,18 @@ const Home = () => {
       <br />
       <Boxb title="Analysis" content="Content of Analysis page goes here." />
       </div>
-
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
     </main>
   );
 };

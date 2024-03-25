@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: 1000vh;
 }
 
 .description {
@@ -235,9 +235,9 @@
 
 .box {
   flex: 1;
-  border: 1px solid #1a1818;
+  border: 1px solid #6d6969;
   margin-left: 10px;
-  background-color: #1a1818;
+  background-color: #6d6969;
   border-radius: 11px; 
   cursor: pointer;
   transition: margin-right 0.3s;
@@ -279,8 +279,8 @@
 
 .boxa {
   flex: 1;
-  border: 1px solid #1a1818;
-  background-color: #1a1818;
+  border: 1px solid #6d6969;
+  background-color: #6d6969;
   margin-left: 200px;
   border-radius: 11px; 
   cursor: pointer;
@@ -290,8 +290,8 @@
 
 .boxb {
   flex: 1;
-  border: 1px solid #1a1818;
-  background-color: #1a1818;
+  border: 1px solid #6d6969;
+  background-color: #6d6969;
   margin-left: 200px;
   border-radius: 11px; 
   margin-right: 80px;

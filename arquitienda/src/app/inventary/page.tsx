@@ -1,3 +1,4 @@
+
 export default function Inventary() {
     return (
       <main>
