@@ -1,7 +1,9 @@
+import Navbar from "../components/navbar";
+
 export default function Nomina() {
     return (
       <main>
-        <h1>Nomina</h1>
+        <Navbar/> 
       </main>
     );
   }

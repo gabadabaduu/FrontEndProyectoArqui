@@ -1,0 +1,84 @@
+.navbar {
+    width: 170px;
+    height: 100%;
+    background-color: rgb(100, 99, 99);
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbarList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbarItem {
+    margin-bottom: 10px;
+  }
+  
+  .navbarLink {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+  }
+  
+  .navbarLink:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(100, 99, 99);
+  }
+  
+  .navbarLink.active {
+    background-color: rgb(63,191,160);
+  }
+
+  .centered-content {
+     position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 77%; 
+    padding: 20px; 
+  }
+  
+  .centered-right {
+    position: fixed;
+    height: 10vh; 
+    padding: 20px;
+  } 
+  
+  .link-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    justify-content: center;
+  }
+  
+  .link-container li {
+    margin-right: 0px; 
+  }
+  
+  .link-container li:last-child {
+    margin-right: 0px; 
+  }
+  
+  
+  .link-container a {
+    display: inline-block;
+    padding: 8px 16px; 
+    border: 2px solid rgb(0, 0, 0); 
+    border-radius: 11px; 
+    color: rgb(12, 12, 12); 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .link-container a:hover {
+    background-color: rgb(100, 99, 99); 
+    color: rgb(255, 255, 255); 
+  }
+  
+  
+  

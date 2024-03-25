@@ -1,0 +1,35 @@
+
+.formcontainer {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .formcontainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .formcontainer label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formcontainer input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .formcontainer button {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .formcontainer button:hover {
+    background-color: #0058c5;
+  }
+  
