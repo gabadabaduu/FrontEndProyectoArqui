@@ -1,14 +1,20 @@
-import { useClient } from 'next/client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const LoginForm: React.FC = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Este efecto se ejecuta solo una vez en el lado del cliente
+    setIsClient(true);
+  }, []);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Form submitted');
   };
 
-  // Convierte parte del componente a un componente de cliente
-  const ClientForm = useClient(() => (
+  // Renderiza el formulario solo si `isClient` es true
+  return isClient ? (
     <form onSubmit={handleSubmit}>
       <label>
         Email:
@@ -20,9 +26,7 @@ const LoginForm: React.FC = () => {
       </label>
       <button type="submit">Iniciar sesión</button>
     </form>
-  ));
-
-  return <ClientForm />;
+  ) : null;
 };
 
 export default LoginForm;

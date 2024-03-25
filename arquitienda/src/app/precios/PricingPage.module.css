@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
+/* PricingPage.module.css */
+.pageLayout {
+    display: flex;    
+}
+
+.pricingContainer {
+    background-color: #2f2f2c;
+    margin-left: 17%; 
+    width: 83%; 
+    min-height: 100vh; 
+    padding: 30px;
+}
+
+.tiendaPlanes {
+    color: white;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36pt;
+}
+
+.tiendaPlanes:nth-child(2) {
+    margin-left: 25px;
+    margin-top: -30px;
+    color: #56bb91;
+}
+
+.pricingPage {
+    display: flex;
+    justify-content: center;
+    background: #2f2f2c;
+    /* Cambiar por el color de fondo adecuado */
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.pricingOption {
+    background: #1e1e1e;
+    /* Cambiar por el color de fondo adecuado */
+    border: 2px solid transparent;
+    /* Puedes cambiar esto para resaltar la opción destacada */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    width: 300px;
+    /* O el ancho que prefieras */
+    text-align: center;
+}
+
+.pricingOption.highlight {
+    border-color: #4CAF50;
+    /* Resalta la opción destacada */
+}
+
+.price {
+    color: #fff;
+    /* Cambiar por el color deseado */
+    margin: 0;
+    font-size: 32pt;
+    font-weight: 400;
+}
+
+.planName {
+    color: #fff;
+    /* Cambiar por el color deseado
+     */
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.subscribeButton {
+    background-color: #3ec0a0;
+    /* Cambiar por el color deseado */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 60%;
+    /* Hace que el botón se expanda para llenar el contenedor */
+}
+
+.subscribeButton:hover {
+    background-color: #369b47;
+    /* Un tono más oscuro para el efecto hover */
+}
+
+.parrafo{
+    text-align: justify;
+    color: #3FBFA0;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Agrega estilos para la responsividad si es necesario */
+@media (max-width: 768px) {
+    .pricingPage {
+        flex-direction: column;
+    }
+
+    .pricingOption {
+        margin-bottom: 20px;
+    }
+}
