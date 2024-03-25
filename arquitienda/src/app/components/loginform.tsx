@@ -1,43 +1,28 @@
-// @ts-nocheck
 import { useClient } from 'next/client';
-import React, { useState } from 'react';
-import styles from '../styles/forms.module.css'; // Importa los estilos
+import React from 'react';
 
 const LoginForm: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-   
-    console.log('Email:', email, 'Password:', password);
+    console.log('Form submitted');
   };
 
-  return (
-    <div className={styles.formcontainer}>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Email:
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Password:
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
-        <button type="submit">Iniciar sesión</button>
-      </form>
-    </div>
-  );
+  // Convierte parte del componente a un componente de cliente
+  const ClientForm = useClient(() => (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Email:
+        <input type="email" required />
+      </label>
+      <label>
+        Password:
+        <input type="password" required />
+      </label>
+      <button type="submit">Iniciar sesión</button>
+    </form>
+  ));
+
+  return <ClientForm />;
 };
 
 export default LoginForm;
