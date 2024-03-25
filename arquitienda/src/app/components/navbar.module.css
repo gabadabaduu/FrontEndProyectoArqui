@@ -1,29 +1,35 @@
 .navbar {
   width: 17%;
-  height: 100%;
+  min-height: 100vh; /* Asegura que la barra de navegación tenga al menos el alto de la ventana */
   background-color: #414141;
   position: fixed;
-  flex-direction: column;
-  align-items: center;
-  
+  display: flex; /* Habilita flexbox para este contenedor */
+  flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+  justify-content: center; /* Centra los elementos hijos verticalmente */
+  padding: 0; /* Ajusta el padding según sea necesario */
 }
 
 .navbarList {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 100%; /* Opcional: Esto asegura que los elementos de la lista usen todo el ancho disponible */
 }
 
 .navbarItem {
   margin-bottom: 10px;
+  text-align: center; /* Asegura que el texto dentro de los elementos de la lista esté centrado si es más corto que el ancho del contenedor */
 }
 
 .navbarLink {
+  display: block; /* Hace que el enlace llene el contenedor li para mejorar la superficie clickeable */
   padding: 10px;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s;
-  border-radius: 10px;
+  width: 100%; /* Hace que el enlace llene todo el ancho del elemento li */
+  text-align: center; /* Centra el texto dentro del enlace */
 }
 
 .navbarLink:hover {
