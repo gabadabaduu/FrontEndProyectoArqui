@@ -19,27 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '30vh' }}> 
-      <br/>
-      <h1>Bienvenida</h1>
-      <div style={{ display: 'flex', color: '#56BB91' }}>
-      <h1>Marcela Valencia</h1>
-      </div>
-      </div>
-        <div className="vertical-bar">
-          <ul className="vertical-link-container">
-            <li>
-              <Link href="paypal">Facturación</Link>
-            </li>
-            <li>
-              <Link href="user">Usuario</Link>
-            </li>
-            <li>
-              <Link href="plans">Tienda de planes</Link>
-            </li>
-          </ul>
-          <li>
-              <Link href="princial">Log out</Link>
-            </li>
         </div>
         <header>
           <nav>

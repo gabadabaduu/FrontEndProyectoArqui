@@ -40,7 +40,30 @@ const Box = ({ title, content }: BoxProps) => {
 const Home = () => {
   return (
     <main>
-   <h1>hola</h1>
+      <br />
+      <div className={styles.container}>
+        <Boxa title="Inventory" content="Content of Inventory page goes here." />
+        <Box title="Nomina" content="Content of Nomina page goes here." />
+        <br />
+       <br />
+      </div>
+       <br />
+      <div className={styles.container}>
+      <br />
+      <Boxb title="Analysis" content="Content of Analysis page goes here." />
+      </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
     </main>
   );
 };
