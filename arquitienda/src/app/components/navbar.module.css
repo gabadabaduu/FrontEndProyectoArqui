@@ -1,84 +1,88 @@
 .navbar {
-    width: 170px;
-    height: 100%;
-    background-color: rgb(100, 99, 99);
-    position: fixed;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .navbarList {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbarItem {
-    margin-bottom: 10px;
-  }
-  
-  .navbarLink {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border-radius: 10px;
-  }
-  
-  .navbarLink:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(100, 99, 99);
-  }
-  
-  .navbarLink.active {
-    background-color: rgb(63,191,160);
-  }
+  width: 17%;
+  min-height: 100vh; /* Asegura que la barra de navegación tenga al menos el alto de la ventana */
+  background-color: #414141;
+  position: fixed;
+  display: flex; /* Habilita flexbox para este contenedor */
+  flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+  justify-content: center; /* Centra los elementos hijos verticalmente */
+  padding: 0; /* Ajusta el padding según sea necesario */
+}
 
-  .centered-content {
-     position: fixed;
-    justify-content: center;
-    align-items: center;
-    height: 77%; 
-    padding: 20px; 
-  }
-  
-  .centered-right {
-    position: fixed;
-    height: 10vh; 
-    padding: 20px;
-  } 
-  
-  .link-container {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    justify-content: center;
-  }
-  
-  .link-container li {
-    margin-right: 0px; 
-  }
-  
-  .link-container li:last-child {
-    margin-right: 0px; 
-  }
-  
-  
-  .link-container a {
-    display: inline-block;
-    padding: 8px 16px; 
-    border: 2px solid rgb(0, 0, 0); 
-    border-radius: 11px; 
-    color: rgb(12, 12, 12); 
-    text-decoration: none; 
-    transition: background-color 0.3s, color 0.3s; 
-  }
-  
-  .link-container a:hover {
-    background-color: rgb(100, 99, 99); 
-    color: rgb(255, 255, 255); 
-  }
-  
-  
-  
+.navbarList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Opcional: Esto asegura que los elementos de la lista usen todo el ancho disponible */
+}
+
+.navbarItem {
+  margin-bottom: 10px;
+  text-align: center; /* Asegura que el texto dentro de los elementos de la lista esté centrado si es más corto que el ancho del contenedor */
+}
+
+.navbarLink {
+  display: block; /* Hace que el enlace llene el contenedor li para mejorar la superficie clickeable */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: 100%; /* Hace que el enlace llene todo el ancho del elemento li */
+  text-align: center; /* Centra el texto dentro del enlace */
+}
+
+.navbarLink:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(100, 99, 99);
+}
+
+.navbarLink.active {
+  background-color: rgb(63, 191, 160);
+}
+
+.centered-content {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 77%;
+  padding: 20px;
+}
+
+.centered-right {
+  position: fixed;
+  height: 10vh;
+  padding: 20px;
+}
+
+.link-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  justify-content: center;
+}
+
+.link-container li {
+  margin-right: 0px;
+}
+
+.link-container li:last-child {
+  margin-right: 0px;
+}
+
+
+.link-container a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 11px;
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link-container a:hover {
+  background-color: rgb(100, 99, 99);
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,109 @@
+/* ContactForm.module.css */
+.contactContainer {
+    background-color: #ffffff;
+    /* color de fondo para el contenedor del formulario */
+    max-width: 900px;
+    /* ancho máximo para el contenedor */
+    margin: 2rem auto;
+    /* centrado con un margen superior e inferior */
+    padding: 2rem;
+    /* padding interno */
+    border-radius: 10px;
+    /* bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* sombra ligera */
+    
+}
+
+.title {
+    text-align: center;
+    /* título centrado */
+    font-size: 3rem;
+    /* tamaño de fuente para el título */
+    color: #000;
+    /* color del título */
+    margin-bottom: 1.5rem;
+    /* espacio debajo del título */
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* dos columnas de igual ancho */
+    grid-gap: 2rem;
+    /* espacio entre las columnas */
+    margin-bottom: 1.5rem;
+    /* margen debajo del formulario antes del botón */
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    /* disposición vertical para etiqueta y campo de entrada */
+    margin-bottom: 1rem;
+    /* margen debajo de cada campo de entrada */
+}
+
+.inputField label {
+    font-size: 1rem;
+    /* tamaño de fuente para la etiqueta */
+    color: #424242;
+    /* color de texto para la etiqueta */
+    margin-bottom: 0.5rem;
+    /* espacio debajo de la etiqueta */
+}
+
+.inputField input,
+.inputField textarea {
+    font-size: 1rem;
+    /* tamaño de fuente para los campos de entrada */
+    padding: 0.75rem;
+    /* padding dentro de los campos de entrada */
+    border: 1px solid #BDBDBD;
+    /* borde del campo de entrada */
+    border-radius: 4px;
+    /* bordes redondeados para los campos de entrada */
+    background-color: #FAFAFA;
+    /* color de fondo para los campos de entrada */
+}
+
+.inputField textarea {
+    height: 150px;
+    /* altura inicial para el campo de texto ampliado */
+    resize: none;
+    /* previene que el usuario redimensione el campo de texto */
+}
+
+.submitButton {
+    width: 100%;
+    /* el botón se extiende a todo el ancho disponible */
+    padding: 1rem;
+    /* padding dentro del botón */
+    background-color: #3fbfa0;
+    /* color de fondo del botón */
+    color: white;
+    /* color de texto del botón */
+    border: none;
+    /* sin borde */
+    border-radius: 4px;
+    /* bordes redondeados */
+    cursor: pointer;
+    /* cambia el cursor a pointer */
+    transition: background-color 0.3s;
+    /* transición suave para el color de fondo */
+    height: 60px;
+    font-size: 14pt;
+}
+
+.submitButton:hover {
+    background-color: #43A047;
+    /* color de fondo del botón al pasar el mouse */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form {
+        grid-template-columns: 1fr;
+        /* una sola columna en pantallas pequeñas */
+    }
+}

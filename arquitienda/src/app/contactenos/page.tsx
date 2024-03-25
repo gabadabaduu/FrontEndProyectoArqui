@@ -1,17 +1,17 @@
-// ContactForm.tsx
-import React from 'react';
 import styles from './ContactForm.module.css'; // Importa tus estilos personalizados
+import React from 'react';
+import Navmenu from '../components/navmenu';
 
-const ContactForm: React.FC = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Lógica para manejar el envío del formulario
-  };
+
+export default function Contactenos() {
+  // voy crear un formulario de contacto 
+  
 
   return (
-    <div className={styles.contactContainer}>
+    <main>
+      <div className={styles.contactContainer}>
       <h1 className={styles.title}>Contáctanos</h1>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form className={styles.form}>
         <div className={styles.formSection}>
           <h2 className={styles.sectionTitle}>Datos generales</h2>
           <div className={styles.twoColumn}>
@@ -70,7 +70,6 @@ const ContactForm: React.FC = () => {
         <button type="submit" className={styles.submitButton}>Enviar</button>
       </form>
     </div>
+    </main>
   );
-};
-
-export default ContactForm;
+}
