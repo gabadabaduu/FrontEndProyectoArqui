@@ -6,9 +6,6 @@ import Image from "next/image";
 import Navbar from "../components/navbar";
 import styles from "./inventary.module.css";
 
-
-
-
 // Define una interfaz para tus productos
 interface Producto {
   id: number;
@@ -18,8 +15,6 @@ interface Producto {
   precio: string;
   codigo: string;
 }
-
-
 
 // Tipa tu array de productos usando la interfaz
 const productos: Producto[] = [
@@ -45,7 +40,6 @@ const productos: Producto[] = [
 
 // Marca el componente para que se ejecute en el cliente y use estado
 export default function Inventary() {
-  
   const [isInfoVisible, setIsInfoVisible] = React.useState(false);
 
   // Estado para manejar el producto seleccionado
@@ -56,7 +50,7 @@ export default function Inventary() {
   const handleMouseEnter = () => {
     setIsInfoVisible(true);
   };
-  
+
   const handleMouseLeave = () => {
     setIsInfoVisible(false);
   };
@@ -71,54 +65,61 @@ export default function Inventary() {
       <Navbar />
       <main className={styles.Container}>
         <div className={styles.contenido}>
-          <div className={styles.listado}>
-            {/* Listado de productos con mini imagen */}
-            {productos.map((producto) => (
+          <div className={styles.encabezado}> {/* Nuevo contenedor para el título */}
+            <h1 className={styles.titulo}>Inventario</h1>
+          </div>
+          
+          <div className={styles.listadoYDetalle}> {/* Nuevo contenedor para listado y detalles */}
+            <div className={styles.listado}>
+              {/* Listado de productos con mini imagen */}
+              {productos.map((producto) => (
+                <div
+                  key={producto.id}
+                  className={styles.producto}
+                  onClick={() => handleProductClick(producto)}
+                >
+                  <Image
+                    src={producto.image}
+                    alt={producto.name}
+                    width={100}
+                    height={100}
+                  />
+                  <div className={styles.productoInfo}>
+                    <p>{producto.name}</p>
+                    <span>Cantidad: {producto.cantidad}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {selectedProduct && (
               <div
-                key={producto.id}
-                className={styles.producto}
-                onClick={() => handleProductClick(producto)}
+                className={styles.detalle}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <Image
-                  src={producto.image}
-                  alt={producto.name}
-                  width={100}
-                  height={100}
+                  src={selectedProduct.image}
+                  alt={selectedProduct.name}
+                  width={300}
+                  height={300}
+                  layout="responsive"
                 />
-                <div className={styles.productoInfo}>
-                  <p>{producto.name}</p>
-                  <span>Cantidad: {producto.cantidad}</span>
+                <div
+                  className={styles.info}
+                  style={{ display: isInfoVisible ? "block" : "none" }}
+                >
+                  <h2>{selectedProduct.name}</h2>
+                  <p>Inventario: {selectedProduct.cantidad}</p>
+                  <p>Precio: {selectedProduct.precio}</p>
+                  <p>Código: {selectedProduct.codigo}</p>
                 </div>
               </div>
-            ))}
+            )}
           </div>
-
-          {selectedProduct && (
-            <div
-              className={styles.detalle}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Image
-                src={selectedProduct.image}
-                alt={selectedProduct.name}
-                width={300}
-                height={300}
-                layout="responsive"
-              />
-              <div
-                className={styles.info}
-                style={{ display: isInfoVisible ? "block" : "none" }}
-              >
-                <h2>{selectedProduct.name}</h2>
-                <p>Inventario: {selectedProduct.cantidad}</p>
-                <p>Precio: {selectedProduct.precio}</p>
-                <p>Código: {selectedProduct.codigo}</p>
-              </div>
-            </div>
-          )}
         </div>
       </main>
     </div>
   );
+
 }

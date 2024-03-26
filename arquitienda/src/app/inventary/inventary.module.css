@@ -15,28 +15,33 @@
 }
 
 .contenido {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     min-height: 90vh;
     margin: 0 auto;
     border-radius: 30px;
     padding: 35px;
     background-color: #414141;
-    display: flex;
 }
 
-.titulo {
-    color: white;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 36pt;
-    margin: 0;
-    padding: 0;
+.listadoYDetalle {
+    display: flex;
+    width: 100%; /* Ajusta esto según necesites */
+    
 }
 
 .listado {
     width: 50%;
     padding: 20px;
+}
+
+.titulo {
+    color: #fff;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 32pt;    
 }
 
 .producto {
