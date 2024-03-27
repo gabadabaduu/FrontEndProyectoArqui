@@ -22,11 +22,15 @@ const Navmenu: React.FC = () => {
           <li>
             <Link href="nomina">Nomina</Link>
           </li>
-
+      
           <li>
-            <Link href="register">Register</Link>
+            <Link href="gestioncontable">gestión</Link>
           </li>
           
+          <li>
+            <Link href="ventas">Nomina</Link>
+          </li>
+
         </ul>
       </nav>
     </header>
