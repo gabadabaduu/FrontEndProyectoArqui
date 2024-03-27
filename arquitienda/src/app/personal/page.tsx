@@ -93,8 +93,14 @@ export default function Personal() {
                     <span>Sueldo: ${empleado.sueldo}</span>
                     <span>Cargo: {empleado.cargo}</span>
                   </div>
+
                 </div>
+
               ))}
+              <div><center>
+                <button className="botonPago">Agregar Empleado</button>
+                <br></br>
+              </center></div>
             </div>
 
             {selectedEmpleado && (
@@ -103,20 +109,29 @@ export default function Personal() {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <Image
-                  src={selectedEmpleado.image}
-                  alt={selectedEmpleado.name}
-                  width={200}
-                  height={200}
-                  layout="intrinsic"
-                />
+                <center>
+                  <Image
+                    src={selectedEmpleado.image}
+                    alt={selectedEmpleado.name}
+                    width={400}
+                    height={400}
+                    layout="intrinsic"
+                  /></center>
+                <center>
+                  <button className="botonPago">Eliminar</button>
+                  <br></br>
+                  <br></br>
+                  <button className="botonPago">Editar</button>
+                </center>
                 <div
                   className={styles.info}
                   style={{ display: isInfoVisible ? "block" : "none" }}
                 >
-                  <h2>{selectedEmpleado.name}</h2>
-                  <p>Sueldo: ${selectedEmpleado.sueldo}</p>
-                  <p>Cargo: {selectedEmpleado.cargo}</p>
+                  <center>
+                    <h2>{selectedEmpleado.name}</h2>
+                    <p>Sueldo: ${selectedEmpleado.sueldo}</p>
+                    <p>Cargo: {selectedEmpleado.cargo}</p>
+                  </center>
                 </div>
               </div>
             )}
