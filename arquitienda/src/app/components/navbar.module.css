@@ -1,11 +1,10 @@
 .navbar {
   width: 17%;
   min-height: 100vh; /* Asegura que la barra de navegación tenga al menos el alto de la ventana */
-  background-color: #888888;
+  background-color: #eeeeee;
   position: fixed;
   display: flex; /* Habilita flexbox para este contenedor */
   flex-direction: column; /* Los elementos hijos se apilan verticalmente */
-  align-items: center; 
   justify-content: center; 
   padding: 0; 
 }
@@ -19,23 +18,38 @@
 
 .navbarItem {
   margin-bottom: 10px;
-  text-align: center; /* Asegura que el texto dentro de los elementos de la lista esté centrado si es más corto que el ancho del contenedor */
+  padding: 0px 0 10px 30px;
 }
+
+
 
 .navbarLink {
-  display: block; /* Hace que el enlace llene el contenedor li para mejorar la superficie clickeable */
+  display: block; /* Mantiene el bloque completo, pero puedes cambiarlo a flex si necesitas más control */
   padding: 10px;
-  color: white;
+  color: #000;
   text-decoration: none;
   transition: background-color 0.3s;
-  width: 100%; /* Hace que el enlace llene todo el ancho del elemento li */
-  text-align: center; /* Centra el texto dentro del enlace */
+  width: 100%; /* Asegura que el enlace use todo el ancho */
+  text-align: left; /* Asegura que cualquier texto adicional esté alineado a la izquierda */
 }
 
+/* Asegúrate de que los estilos del hover se mantengan como deseas */
 .navbarLink:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(100, 99, 99);
+  background: #56BB91;
+  color: #000000;
+  transform: scale(1.1);
+  border-left: #3f6f5b 8px solid;
 }
+
+/* Puede que necesites ajustar el estilo para la imagen dentro del enlace para asegurar que se vea bien con el hover */
+.navbarLink img {
+  transition: transform 0.3s; /* Si quieres un efecto suave al escalar la imagen */
+}
+
+.navbarLink:hover img {
+  transform: scale(1.05); /* Ejemplo de escalar la imagen ligeramente al hacer hover */
+}
+
 
 .navbarLink.active {
   background-color: rgb(63, 191, 160);
@@ -54,6 +68,8 @@
   height: 10vh;
   padding: 20px;
 }
+
+
 
 .link-container {
   list-style-type: none;
@@ -85,4 +101,8 @@
 .link-container a:hover {
   background-color: rgb(100, 99, 99);
   color: rgb(255, 255, 255);
+}
+
+.logo {
+  margin: 0 20px 0 20px; 
 }
