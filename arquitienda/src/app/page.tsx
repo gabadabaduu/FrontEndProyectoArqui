@@ -15,6 +15,9 @@ const Home = () => {
               <li>
                 <Link href="login">Iniciar Sesión</Link>
               </li> 
+              <li>
+                <Link href="precios">Conoce nuestros precios</Link>
+              </li> 
             </ul>
           </nav>
         </header>

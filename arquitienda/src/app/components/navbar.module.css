@@ -1,13 +1,13 @@
 .navbar {
   width: 17%;
   min-height: 100vh; /* Asegura que la barra de navegación tenga al menos el alto de la ventana */
-  background-color: #b9b0b0;
+  background-color: #888888;
   position: fixed;
   display: flex; /* Habilita flexbox para este contenedor */
   flex-direction: column; /* Los elementos hijos se apilan verticalmente */
-  align-items: center; /* Centra los elementos hijos horizontalmente */
-  justify-content: center; /* Centra los elementos hijos verticalmente */
-  padding: 0; /* Ajusta el padding según sea necesario */
+  align-items: center; 
+  justify-content: center; 
+  padding: 0; 
 }
 
 .navbarList {
