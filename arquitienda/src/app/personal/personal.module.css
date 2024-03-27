@@ -77,18 +77,20 @@
 
 
 .detalle {
-    position: relative;
+    position: intrinsic;
     /* Establece la posición relativa para posicionar absolutamente la descripción */
     width: 50%;
     max-height: 78vh;
+    color: #3FBFA0;
     /* Establece la altura máxima de la imagen */
     overflow: hidden;
     /* Asegúrate de que nada se desborde del contenedor */
 }
 
 .detalle img {
-    width: 100%;
-    height: auto;
+
+    width: 400px;
+    height: 400px;
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -98,9 +100,9 @@
     /* Cambiado de bottom a top */
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: #2f2f2c;
     /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));*/
-    background-color: white;
+    background-color: #2f2f2c;
 
     transform: translateY(-100%);
     /* Ajustado para esconder la información hacia arriba */
@@ -116,4 +118,14 @@
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     /* Puedes añadir más estilos aquí según necesites */
+}
+
+.botonPago {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #64FCDD;
+    color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
