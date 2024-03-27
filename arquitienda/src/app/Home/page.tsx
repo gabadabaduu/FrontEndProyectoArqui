@@ -11,7 +11,7 @@ export default function home() {
         <br />
         <br />
         <Navmenu/>
-      <h1>home</h1>
+      
     </main>
   );
 }

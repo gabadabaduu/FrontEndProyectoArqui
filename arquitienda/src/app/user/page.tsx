@@ -8,7 +8,7 @@ export default function User() {
       <Navbar />
       <Navmenu />
       <div className="centered-content">
-        <h1>Personal</h1>
+        <h1>Bi</h1>
         <li>
           <Link href="personal">Personal</Link>
         </li>
