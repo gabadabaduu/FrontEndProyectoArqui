@@ -8,7 +8,6 @@ export default function PricingPage() {
   return (
 
     <div className={styles.pageLayout}>
-        <Navbar />
       <main className={styles.pricingContainer}>
         <section className={styles.plans}>
           <h1 className={styles.tiendaPlanes}>Tienda</h1>

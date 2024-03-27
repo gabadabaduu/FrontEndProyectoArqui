@@ -5,6 +5,7 @@ import React /* @client */ from "react";
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import styles from "./inventary.module.css";
+import Navmenu from "../components/navmenu";
 
 // Define una interfaz para tus productos
 interface Producto {
@@ -64,9 +65,10 @@ export default function Inventary() {
     <div className={styles.pageLayout}>
       <Navbar />
       <main className={styles.Container}>
+            <h1 className={styles.titulo}>Inventario</h1>
+        <Navmenu/> <br></br>
         <div className={styles.contenido}>
           <div className={styles.encabezado}> {/* Nuevo contenedor para el título */}
-            <h1 className={styles.titulo}>Inventario</h1>
           </div>
           
           <div className={styles.listadoYDetalle}> {/* Nuevo contenedor para listado y detalles */}

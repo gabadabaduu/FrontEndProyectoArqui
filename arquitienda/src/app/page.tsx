@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul className={`${styles.navList} ${isActive ? styles.active : ''}`}>
           <li><Link href="#" legacyBehavior><a>Início</a></Link></li>
           <li><Link href="#" legacyBehavior><a>Sobre Nostros</a></Link></li>
-          <li><Link href="#" legacyBehavior><a>Projectos</a></Link></li>
+          <li><Link href="/precios" legacyBehavior><a>Precios</a></Link></li>
           <li><Link href="/login" legacyBehavior><a>Inicio sesión</a></Link></li>
         </ul>
       </nav>

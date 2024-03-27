@@ -10,7 +10,6 @@
 }
 
 .pricingContainer {
-    background-color: #2f2f2c;
     margin-left: 17%; 
     width: 83%; 
     min-height: 100vh; 
@@ -18,7 +17,7 @@
 }
 
 .tiendaPlanes {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -34,7 +33,6 @@
 .pricingPage {
     display: flex;
     justify-content: center;
-    background: #2f2f2c;
     /* Cambiar por el color de fondo adecuado */
     padding: 20px;
     font-family: "Lato", sans-serif;

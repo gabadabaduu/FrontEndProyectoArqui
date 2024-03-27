@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* PricingPage.module.css */
+.pageLayout {
+    display: flex;    
+}
+
+.pricingContainer {
+    margin-left: 17%; 
+    width: 83%; 
+    min-height: 100vh; 
+    padding: 30px;
+}
+
+.tiendaPlanes {
+    color: rgb(0, 0, 0);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36pt;
+}
+
+.tiendaPlanes:nth-child(2) {
+    margin-left: 25px;
+    margin-top: -30px;
+    color: #56bb91;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    min-height: 10vh;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 35px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contenido:nth-child(1) {
+    width: 30%;
+}
+
+.contenido:nth-child(2) {
+    width: 60%;
+}
+
+.contenido:nth-child(3) {
+    width: 55%;
+    margin: 50px 0px 50px 10px;
+}
+
+.contenido:nth-child(4) {
+    width: 40%;
+    margin: 50px 0px 50px 10px;
+}
+
+
+.titulo {
+    color: #000000;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 22pt;
+}
+
+.cajas{
+    display: flex;    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
