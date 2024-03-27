@@ -24,11 +24,11 @@ const Navmenu: React.FC = () => {
           </li>
       
           <li>
-            <Link href="gestioncontable">gestión</Link>
+            <Link href="gestioncontable">Gestión Contable</Link>
           </li>
           
           <li>
-            <Link href="ventas">Nomina</Link>
+            <Link href="ventas">Ventas</Link>
           </li>
 
         </ul>
