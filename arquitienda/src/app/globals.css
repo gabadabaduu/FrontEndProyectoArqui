@@ -7,8 +7,7 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-    background: rgb(63,191,160);
-    background: radial-gradient(circle, rgba(63,191,160,1) 0%, rgba(187,255,238,1) 100%);
+
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -46,10 +45,7 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-  }
-}
+
 
 .vertical-bar {
   position: fixed;

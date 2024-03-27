@@ -1,3 +1,126 @@
+
+
+/* components/Navbar.module.css */
+.logo {
+  font-size: 24pt;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff; /* Asegúrate de que los enlaces hereden este color */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #56BB91;
+  height: 8vh;
+}
+
+.main {
+  background: url("/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.navList li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.navList li a {
+  color: #fff; /* Importante para asegurar la correcta visualización de los enlaces */
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14pt;
+}
+
+.navList li a:hover {
+  opacity: 0.7;
+  transform: scale(1.5);
+}
+
+
+.mobileMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileMenu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  .navList {
+    position: absolute;
+    top: 8vh; /* Ajusta según necesites */
+    right: 0;
+    width: 50vw;
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinea las opciones al principio de la lista */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    padding: 0;
+  }
+
+  .navList.active {
+    transform: translateX(0);
+  }
+
+  .navList li {
+    height: 80px; /* Altura fija para cada opción */
+    margin-left: 0;
+    opacity: 1; /* Asegura que sean visibles */
+    width: 100%; /* Ocupa el ancho disponible */
+    display: flex;
+    align-items: center; /* Alineación vertical de los enlaces dentro de cada li */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .mobileMenu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .mobileMenu.active .line2 {
+    opacity: 0;
+  }
+
+  .mobileMenu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+}
+
+
+
+
+
+
+
+/*
 .main {
   display: flex;
   flex-direction: column;
@@ -108,7 +231,6 @@
 .logo {
   position: relative;
 }
-/* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
@@ -126,7 +248,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
@@ -203,7 +324,6 @@
   }
 }
 
-/* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
@@ -311,3 +431,4 @@
   margin-bottom: 0;
 }
 
+*/
