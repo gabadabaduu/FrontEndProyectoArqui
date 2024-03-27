@@ -115,7 +115,7 @@ export default function Nomina() {
                 <center>
                   <br></br>
                   <button className="botonPago">Pagar Nomina</button>
-                  <tab>  </tab>
+                  <tab> </tab>
                   <button className="botonPago">Cancelar</button>
                 </center>
                 <div

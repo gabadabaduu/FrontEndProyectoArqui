@@ -1,7 +1,11 @@
 
 .formcontainer {
-    width: 300px;
-    margin: 0 auto;
+    background-color: #2f2f2c;
+    margin-left: 17%;
+    width: 83%;
+    min-height: 100vh;
+    padding: 30px;
+
   }
   
   .formcontainer form {
