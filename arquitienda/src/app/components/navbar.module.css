@@ -1,7 +1,7 @@
 .navbar {
   width: 17%;
   min-height: 100vh; /* Asegura que la barra de navegación tenga al menos el alto de la ventana */
-  background-color: #414141;
+  background-color: #b9b0b0;
   position: fixed;
   display: flex; /* Habilita flexbox para este contenedor */
   flex-direction: column; /* Los elementos hijos se apilan verticalmente */

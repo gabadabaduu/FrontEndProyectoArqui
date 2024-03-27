@@ -15,7 +15,6 @@ const LoginForm: React.FC = () => {
     console.log('Form submitted');
   };
 
-  // Renderiza el formulario solo si `isClient` es true
   return isClient ? (
     <form onSubmit={handleSubmit}>
       <label>

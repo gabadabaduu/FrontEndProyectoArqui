@@ -18,28 +18,28 @@ const empleados: Empleado[] = [
     id: 1,
     name: "Mariana Restrepo",
     cargo: "Secretaria",
-    image: "/marianamov.gif", // Aquí proporciona la ruta de la imagen ubicada en public
+    image: "/marianamov.gif", 
     sueldo: 1250000,
   },
   {
     id: 2,
     name: "Beatriz Pinzon",
     cargo: "Secretaria",
-    image: "/bettymov.gif", // Aquí proporciona la ruta de la imagen ubicada en public
+    image: "/bettymov.gif", 
     sueldo: 1250000,
   },
   {
     id: 3,
     name: "Armando Mendoza",
     cargo: "CEO",
-    image: "/armandomov.gif", // Aquí proporciona la ruta de la imagen ubicada en public
+    image: "/armandomov.gif", 
     sueldo: 9584000,
   },
   {
     id: 4,
     name: "Mario Calderon",
     cargo: "Sub-Gerente",
-    image: "/mariomov.gif", // Aquí proporciona la ruta de la imagen ubicada en public
+    image: "/mariomov.gif", 
     sueldo: 7963458,
   },
 ];
@@ -61,7 +61,7 @@ export default function Nomina() {
     setIsInfoVisible(false);
   };
 
-  // Función para manejar el clic en un producto
+
   const handleProductClick = (empleado: any) => {
     setselectedEmpleado(empleado);
   };
@@ -115,7 +115,7 @@ export default function Nomina() {
                 <center>
                   <br></br>
                   <button className="botonPago">Pagar Nomina</button>
-                  <tab>==</tab>
+                  <tab>  </tab>
                   <button className="botonPago">Cancelar</button>
                 </center>
                 <div

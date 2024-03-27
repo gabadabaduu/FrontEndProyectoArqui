@@ -3,11 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-
 const Home = () => {
   return (
     <main>
-   <h1>hola</h1>
    <header>
           <nav>
             <ul className="link-container">
@@ -20,6 +18,9 @@ const Home = () => {
             </ul>
           </nav>
         </header>
+        <body>
+          
+        </body>
     </main>
   );
 };
