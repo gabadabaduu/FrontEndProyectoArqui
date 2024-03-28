@@ -2,9 +2,8 @@
 
 import React /* @client */ from "react";
 import Image from "next/image";
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbaruser";
 import styles from "./personal.module.css";
-import Navmenu from "../components/navmenu";
 
 interface Empleado {
   id: number;
@@ -45,11 +44,14 @@ const empleados: Empleado[] = [
   },
 ];
 
+
 export default function Personal() {
   const [isInfoVisible, setIsInfoVisible] = React.useState(false);
 
-  const [selectedEmpleado, setselectedEmpleado] =
-    React.useState<Empleado | null>(null);
+
+  const [selectedEmpleado, setselectedEmpleado] = React.useState<Empleado | null>(
+    null
+  );
 
   const handleMouseEnter = () => {
     setIsInfoVisible(true);
@@ -68,11 +70,10 @@ export default function Personal() {
     <div className={styles.pageLayout}>
       <Navbar />
       <main className={styles.Container}>
-        <h1 className={styles.titulo}>Empleados</h1>
-
-        <Navmenu /> <br></br>
         <div className={styles.contenido}>
-          <div className={styles.encabezado}></div>
+          <div className={styles.encabezado}>
+            <h1 className={styles.titulo}>Empleados</h1>
+          </div>
           <div className={styles.listadoYDetalle}>
             <div className={styles.listado}>
               {empleados.map((empleado) => (
@@ -92,14 +93,14 @@ export default function Personal() {
                     <span>Sueldo: ${empleado.sueldo}</span>
                     <span>Cargo: {empleado.cargo}</span>
                   </div>
+
                 </div>
+
               ))}
-              <div>
-                <center>
-                  <button className="botonPago">Agregar Empleado</button>
-                  <br></br>
-                </center>
-              </div>
+              <div><center>
+                <button className="botonPago">Agregar Empleado</button>
+                <br></br>
+              </center></div>
             </div>
 
             {selectedEmpleado && (
@@ -115,8 +116,7 @@ export default function Personal() {
                     width={400}
                     height={400}
                     layout="intrinsic"
-                  />
-                </center>
+                  /></center>
                 <center>
                   <button className="botonPago">Eliminar</button>
                   <br></br>
@@ -140,4 +140,5 @@ export default function Personal() {
       </main>
     </div>
   );
+
 }
