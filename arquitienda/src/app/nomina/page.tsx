@@ -73,7 +73,7 @@ export default function Nomina() {
       <main className={styles.Container}>
         <div className={styles.contenido}>
           <div className={styles.encabezado}>
-            <h1 className={styles.titulo}>Empleados</h1>
+            <h1 className={styles.titulo}>Nomina - Empleados</h1>
           </div>
           <div className={styles.listadoYDetalle}>
             <div className={styles.listado}>
