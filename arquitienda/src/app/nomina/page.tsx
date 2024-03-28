@@ -119,7 +119,7 @@ export default function Nomina() {
                     <button className="botonPago">Pagar Nomina</button>
                   </Link>
                   <tab>||</tab>
-                  <Link href="/paypal" legacyBehavior>
+                  <Link href="/Home" legacyBehavior>
                     <button className="botonPago">Cancelar</button>
                   </Link>
                 </center>
