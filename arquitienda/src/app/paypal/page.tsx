@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./paypal.module.css";
 import Navbar from "../components/navbaruser";
+import Swal from 'sweetalert2'
+import { useEffect } from 'react';
 
 interface Tarjeta {
     id: number;
@@ -13,6 +15,16 @@ interface Tarjeta {
     image: string;
     sueldo: number;
 }
+
+const handleButtonClickPago = () => {
+    // Mostrar la alerta con SweetAlert2
+    Swal.fire({
+        title: 'Transaccion Aprovada',
+        icon: 'success',
+        text: '¡La transacción de xxxx de $$$ se a realizado correctamente!',
+        timer: 6000
+    });
+};
 
 export default function paypal() {
 
@@ -98,12 +110,17 @@ export default function paypal() {
                         <br></br>
                         <center>
                             {/* Boton de pago y regreso */}
-                            <Link href={"/Home"} legacyBehavior>
+                            <Link href={"/nomina"} legacyBehavior>
                                 <button className={styles.botonPago}
                                 >Regresar</button></Link>
-                            <Link href={"/pago"} legacyBehavior>
+
+                            {/* Usamos un botón en lugar de un enlace para manejar el evento click */}
+                            <button className={styles.botonPago} onClick={handleButtonClickPago}>
+                                Pagar
+                            </button>
+                            {/*<Link href={"/pago"} legacyBehavior>
                                 <button className={styles.botonPago}
-                                >Pagar</button></Link>
+    >Pagar</button></Link>*/}
                         </center>
                         <br />
                         <br />
